@@ -1,0 +1,100 @@
+/* ------------------------------------------------ */
+/* BASE COLOR: #e08283 */
+/* DARKBASE COLOR: #d34c4d */
+/* ------------------------------------------------ */
+
+$navbar-default-bg:#fff ;
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.container{
+  width:100%;
+  margin:0;
+  padding:0;
+}
+/* ------------------------------------------------ */
+/* Navigation Bar */
+/* ------------------------------------------------ */
+.logo{
+  height:45px;
+  padding-top:2px;
+}
+.navbar{
+  border-radius: 0px;
+  box-shadow: 0 1px 2px #d8d8d8;
+  margin:0;
+  opacity:0.95;
+}
+
+/* ------------------------------------------------ */
+/* Footer */
+/* ------------------------------------------------ */
+.footer{
+    background-color: #333;
+    padding-top:20px;
+    font-size: 90%;
+}
+
+.footer-nav{
+    list-style: none;
+    padding-top: 30px;
+    padding-left: 60px;
+}
+
+
+.footer-nav li{
+    float: left;
+    display: inline-block;
+}
+
+.footer-nav li a{
+    border:0;
+    color: #888;
+}
+
+.footer p {
+    color: #888;
+    display: block;
+    text-align: center;
+    padding: 30px;
+    font-size: 85%;
+}
+
+/* ------------------------------------------------ */
+/* Form */
+/* ------------------------------------------------ */
+
+/* ------------------------------------------------ */
+/* Home */
+/* ------------------------------------------------ */
+.jumbotron{
+  background-image:linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.74)), asset-url('headerred-min.jpg');
+  background-size:cover;
+  height: 100vh;
+  margin:0;
+}
+
+.jumbotron h1{
+  text-align:center;
+  font-size:250%;
+  color:#d34c4d;
+  margin-top:230px;
+}
+.btn-sm{
+  background-color:#d34c4d;
+  border: 2px solid #d34c4d;
+  margin-top:100px;
+  margin-left: 40px;
+}
+
+.btn-sm:hover{
+  background-color: #fff;
+  color:#d34c4d;
+  border: 2px solid #d34c4d;
+}
+
+/* ------------------------------------------------ */
+/* New Image */
+/* ------------------------------------------------ */
