@@ -13,7 +13,7 @@ before_action :set_image, only:[:update, :show, :edit, :destroy]
   def create
     @image = Image.new(image_params)
     if @image.save
-      flash[:notice]="Your image has been successfully created"
+      flash[:success]="Your image has been successfully created"
       redirect_to image_path(@image)
     else
       render 'new'
@@ -27,7 +27,7 @@ before_action :set_image, only:[:update, :show, :edit, :destroy]
   
   def update
     if @image.update(image_params)
-      flash[:notice]="Your image has been successfully updated"
+      flash[:success]="Your image has been successfully updated"
       redirect_to image_path(@image)
     else
       render 'edit'
@@ -39,7 +39,7 @@ before_action :set_image, only:[:update, :show, :edit, :destroy]
   
   def destroy
     @image.destroy
-    flash[:notice]="Your image has been successfully deleted"
+    flash[:danger]="Your image has been successfully deleted"
     redirect_to images_path
   end 
 
