@@ -1,0 +1,11 @@
+<h1>Profile </h1>
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+    <%= @user.images.each do |image|%>
+      <div class="well">
+        <%= image.imagename%>
+        <%= image.category%>
+      </div>
+    <% end %>
+  </div>
+</div>

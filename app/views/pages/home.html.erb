@@ -1,94 +1,48 @@
 <head>
-  <%= stylesheet_link_tag 'external/normalize.css.scss'%>
-  <%= stylesheet_link_tag 'external/grid.css.scss'%>
-  <%= stylesheet_link_tag 'external/ionicons.min.css.scss'%>
-  <%= stylesheet_link_tag 'external/animate.css.scss'%>
-  <%= stylesheet_link_tag 'home.css.scss'%>
-  <%= stylesheet_link_tag 'home-queries.css.scss'%>
-  <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Lato:100,300,300i,400' %>
-
-  
-  <title>Crownshot</title>
+  <%= stylesheet_link_tag "custom.css.scss" %>
+  <%= stylesheet_link_tag "home.css.scss" %>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-  <header>
-            <nav>
-                <div class="row">
-                    <%=link_to(image_tag("logo.png", alt:"Crownshot logo", class: "logo"), root_path) %> 
-                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
-                        <ul class="main-nav js--main-nav">
-                            <li><a href='#'>Stylists</a></li>
-                            <li><a href='#'>Log In</a></li>
-                            <li style="padding: 7px 0;border-radius: 5px; border: 2px solid #e08283;"><a href='#'>Sign Up Free</a></li>
-                        </ul>
-                    
-                </div>
-            </nav>
-            <div class="row header-text-box"> 
-                <h1>Every day is a Good hair day</h1>
-            </div>
-            <div class="row search-boxes">
-                <div class="col span-1-of-3 search-box">
-                    <h4>Location</h4>
-                </div>
-                <div class="col span-1-of-3 search-box">
-                    <h4>Service</h4>
-                </div>
-                <div class="col span-1-of-3 search-box discover-box">
-                    <h4><a href="filter.html">Discover</a></h4>
-                </div>
-            </div>
-        </header>
-         <section class="section-daily-picture js--section-daily">
-            <div class="row">
-                <h2>Release your Confidence</h2>
-            </div>
-            
-            <div class="row">
-                <div class="col span-1-of-3 box">
-                    <%= image_tag 'mencut.png', alt: "men cut"%>
-                    <h3><a href="#">Men's Cut</a></h3>
-                </div>
-                <div class="col span-1-of-3 box ">
-                    <%= image_tag 'womencut.png', alt: "women cut"%>
-                    <h3><a href="#"> Women's Cut</a></h3>
-                </div>
-                <div class="col span-1-of-3 box">
-                    <%= image_tag 'redcolor.png', alt: "color"%>
-                    <h3><a href="#">Color</a></h3>
-                </div>
-            </div>
-        </section>
-        <section class="section-special-picture">
-            <div class="row">
-                <h2>The Perfect Hairstyle for when <br>you say I do</h2>
-            
-            </div>
-            <div class="row ">
-                <div class="col span-1-of-2 special-box ">
-                    <%= image_tag 'bridal1.png', alt: "bridal"%>
-                    <h3><a href="#">Bridal</a></h3>
-                </div>
-                <div class="col span-1-of-2 special-box">
-                    <%= image_tag 'prom1.png', alt: "prom"%>
-                    <h3><a href="#">Prom</a></h3>
-                </div>
-            </div>
-            
-       
-        </section>
-        <footer>
-            <div class="row">
-                <div class="footer-nav">
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <p>Crownshot &copy; 2016 by Crownshot. All rights reserved</p>
-            </div>
-        </footer>
 
-</body>
+
+<div class="jumbotron">
+  <div class="col-md-6 col-md-offset-3 jumbo">
+    <h1>EVERY DAY IS A GOOD HAIR DAY</h1>
+  </div>
+</div>
+
+ <section class="section-daily-picture">
+  <div class="row">
+    <h2>Release your Confidence</h2>
+  </div>
+            
+  <div class="row">
+    <div class="col-sm-4 box">
+      <%= link_to image_tag("mencut.png", alt: "mens cut" ), "#" %>
+        <h3><a href="#">Men's Cut</a></h3>
+      </div>
+    <div class="col-sm-4 box ">
+      <%= link_to image_tag("womencut.png", alt: "womens cut" ), "#" %>
+      <h3><a href="#"> Women's Cut</a></h3>
+    </div>
+    <div class="col-sm-4 box">
+      <%= link_to image_tag("redcolor.png", alt: "color" ), "#" %>
+      <h3><a href="#">Color</a></h3>
+    </div>
+   </div>
+ </section>
+ <section class="section-special-picture">
+    <div class="row">
+      <h2>The Perfect Hairstyle for when <br>you say I do</h2>
+    </div>
+    <div class="row ">
+      <div class="col-sm-4 col-sm-offset-2 special-box ">
+        <%= link_to image_tag("bridal1.png", alt: "bridal" ), "#" %>
+        <h3><a href="#">Bridal</a></h3>
+      </div>
+      <div class="col-sm-4 special-box">
+        <%= link_to image_tag("prom1.png", alt: "prom" ), "#" %>
+        <h3><a href="#">Prom</a></h3>
+      </div>
+    </div>
+  </section>

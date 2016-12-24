@@ -1,0 +1,86 @@
+/* ------------------------------------------------ */
+/* BASE COLOR: #e08283 */
+/* DARKBASE COLOR: #d34c4d */
+/* ------------------------------------------------ */
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* ------------------------------------------------ */
+/*Application HTML Element */
+/* ------------------------------------------------ */
+
+/*---navigation---*/
+.navbar{
+  background-color:#fff;
+  border-radius: 0px;
+  box-shadow:0 1px 2px #d8d8d8;
+  margin-bottom:0px;
+  opacity: 0.95;
+}
+
+.icon-bar{
+  background-color: #e08283;
+}
+
+.nav li a{
+  color:#e08283;
+}
+
+.logo img{
+  width:45px;
+  margin-top:2px;
+}
+
+/*---footer---*/
+.footer{
+    background-color: #333;
+    padding-top:20px;
+    font-size: 90%;
+}
+
+.footer-nav{
+    list-style: none;
+    padding-top: 00px;
+    padding-left: 60px;
+}
+
+
+.footer-nav li{
+    float: left;
+    display: inline-block;
+}
+
+.footer-nav li a{
+    border:0;
+    color: #888;
+}
+
+.footer p {
+    color: #888;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-size: 85%;
+}
+
+
+
+/* ------------------------------------------------ */
+/*Home page */
+/* ------------------------------------------------ */
+.jumbotron{
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.74)), asset-url("headerred-short.jpg");
+  background-size:cover;
+  height:100vh;
+}
+
+.jumbo{
+  top: 45%;
+}
+.jumbo h1{
+  text-align: center;
+  color:#e08283;
+  font-size: 200%;
+}
