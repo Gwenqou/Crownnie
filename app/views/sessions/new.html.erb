@@ -7,19 +7,9 @@
 
 <h1>Welcome to Crownshot </h1>
 <h3><strike>Have a good day.</strike> Make it a great day </h3>
-<%= render 'shared/errors', obj: @user %>
 <div class="row">
   <div class="col-sm-8 col-sm-offset-3 form-space">
-    <%= form_for(@user, :html=>{class:"form-horizontal", role: "form"}) do |f| %>
-      <div class="form-group form-color">
-        <div class="col-sm-2">
-          <%= f.label :username, class:"control-label"%>
-        </div>
-        <div class="col-sm-6">
-          <%= f.text_field :username, class:"form-control" %>
-        </div>
-      </div>
-      
+    <%= form_for(:session, :html=>{class:"form-horizontal", role: "form"},url:login_path ) do |f| %>
       <div class="form-group form-color">
         <div class="col-sm-2">
           <%= f.label :email, class:"control-label"%>
@@ -40,10 +30,9 @@
       
       <div class="form-group">
         <div class="col-sm-2 col-sm-offset-4">
-          <%= f.submit "Sign Up", class:"btn btn-danger"%>
+          <%= f.submit "Log In", class:"btn btn-danger"%>
         </div>
       </div>
     <% end %>
   </div>
 </div>
-

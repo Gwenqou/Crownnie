@@ -1,18 +1,24 @@
-<h1>Image Gallery</h1>
-<%= link_to "Create new", new_image_path%>
-<table>
-  <tr>
-    <th>Image Name</th>
-    <th>Category</th>
-  </tr>
-  <% @images.each do |image|%>
-  <tr>
-    <td><%=image.imagename%></td>
-    <td><%=image.category%></td>
-    <td><%= link_to 'Show', image_path(image)%></td>
-    <td><%= link_to 'Edit', edit_image_path(image)%></td>
-    <td><%= link_to 'Delete',image_path(image),method: :delete, data: {confirm: "Are you sure?"}%> </td>
-  </tr>
-  <% end %>
-  
-</table>
+<head>
+  <%= stylesheet_link_tag "custom.css.scss" %>
+  <%= stylesheet_link_tag "filter.css.scss" %>
+
+</head>
+
+<div class="row filter-picture-boxes">
+  <div class="col-sm-3 filter-picture"></div>
+  <div class="col-sm-3 filter-picture"></div>
+  <div class="col-sm-3 filter-picture"></div>
+  <div class="col-sm-3 filter-picture"></div>
+</div>
+<div class="row picture-boxes">
+  <div class="col-sm-3 filter-picture"></div>
+  <div class="col-sm-3 filter-picture"></div>
+  <div class="col-sm-3 filter-picture"></div>
+  <div class="col-sm-3 filter-picture"></div>
+</div>
+<div class="row picture-boxes">
+  <div class="col-sm-3 filter-picture"></div>
+  <div class="col-sm-3 filter-picture"></div>
+  <div class="col-sm-3 filter-picture"></div>
+  <div class="col-sm-3 filter-picture"></div>
+</div>
