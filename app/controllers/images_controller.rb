@@ -1,5 +1,8 @@
 class ImagesController < ApplicationController
 before_action :set_image, only:[:update, :show, :edit, :destroy] 
+before_action :require_user, only: [:new, :create,:edit, :update, :destroy]
+before_action :require_same_user, only: [:edit, :update, :destroy]
+  
 
   def index
     @images = Image.all
@@ -50,6 +53,11 @@ before_action :set_image, only:[:update, :show, :edit, :destroy]
     def set_image
       @image = Image.find(params[:id])
     end 
-    
+    def require_same_user
+      if current_user!= @image.user
+        flash[:danger] = "You can only edit or delete your own images"
+        redirect_to images_path
+      end 
+    end 
   
 end 
